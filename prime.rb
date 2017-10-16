@@ -13,5 +13,6 @@ def prime?(num)
       is_prime = false
     end
   end
+  
   is_prime
 end
