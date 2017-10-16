@@ -1,13 +1,17 @@
 # Add  code here!
 def prime?(num)
+  is_prime = true
+
   if num == 0 || num == 1
-    true
+    is_prime = false
   end
+
   nums_to_test = (2...num).to_a
+
   nums_to_test.each do |num_to_test|
     if num % num_to_test == 0
-      false
+      is_prime = false
     end
   end
-  true
+  is_prime
 end
