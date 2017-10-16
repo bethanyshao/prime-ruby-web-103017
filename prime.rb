@@ -2,7 +2,7 @@
 def prime?(num)
   is_prime = true
 
-  if num == 0 || num == 1
+  if num <= 1
     is_prime = false
   end
 
@@ -13,6 +13,6 @@ def prime?(num)
       is_prime = false
     end
   end
-  
+
   is_prime
 end
